@@ -3,7 +3,10 @@ import os, io, sys
 import datetime
 import types
 import traceback
-import hexdump
+try:
+    import hexdump
+except ImportError:    # optional: only for hex dumps in debug logs
+    hexdump = None
 
 __FORMAT__ = '[%(asctime)s][%(thread)d][%(filename)s][%(funcName)s:%(lineno)d][%(levelname)s] %(message)s'
 

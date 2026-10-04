@@ -9,7 +9,10 @@ import asyncio
 import traceback
 import configparser
 import xml.etree.ElementTree as ET
-import xmltodict
+try:
+    import xmltodict
+except ImportError:    # only used by XML helpers the decompiler does not call
+    xmltodict = None
 
 from ctypes import cdll, byref
 
