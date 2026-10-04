@@ -8,10 +8,5 @@ setup(
     description         = 'ml',
     packages            = find_packages(exclude = ['contrib', 'docs', 'tests*']),
     py_modules          = ['ml'],
-    install_requires    = [
-        'xmltodict',
-        'aiohttp',
-        'rsa',
-        'hexdump',
-    ],
+    install_requires    = [],
 )

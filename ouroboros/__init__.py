@@ -16,12 +16,9 @@ from .otypes.wintypes import *
 
 from . import console
 from . import dbghelp
-from . import network
 from . import fileio
-from . import cipher
 from . import logger
 from . import encoding
 from . import iterlib
-from . import asynclib
 
 from .dbghelp import Try, TryInvoke, bp, ibp
