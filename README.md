@@ -9,4 +9,7 @@ used by the Falcom script decompiler ([ouroboros-falcom](https://github.com/Edra
 
 Use: put this folder on `PYTHONPATH` (it provides `ml.py` and `ouroboros/`). Python 3.10+.
 
+Fix: `console.pause()` (called by `Try()` after an error) does not wait for a key press when the output is
+captured by another program, so a build that runs decompiled scripts does not hang on a compile error.
+
 The library is by [Ouroboros](https://github.com/Ouroboros).
