@@ -19,6 +19,8 @@ else:
 def pause(text = None):
     if text is not None:
         print(text)
+    if not (sys.stdin and sys.stdin.isatty() and sys.stdout and sys.stdout.isatty()):
+        return      # run by another program (output captured): nobody sees the error or can press a key
     getch()
 
 def setTitle(text):
